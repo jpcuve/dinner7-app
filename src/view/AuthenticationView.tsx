@@ -5,10 +5,11 @@ import SignInForm from '../component/SignInForm'
 import SignUpForm from '../component/SignUpForm'
 
 const AuthenticationView: React.FC<RouteComponentProps> = props => {
+  const doNothing = () => undefined
   return (
     <Template>
-      <SignInForm/>
-      <SignUpForm/>
+      <SignInForm onCompleted={doNothing}/>
+      <SignUpForm onCompleted={doNothing}/>
     </Template>
   )
 }
