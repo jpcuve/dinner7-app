@@ -1,8 +1,8 @@
 import React from 'react'
 import { RouteComponentProps } from 'react-router'
 import Template from '../Template'
-import SignInForm from '../component/SignInForm'
-import SignUpForm from '../component/SignUpForm'
+import SignInForm from '../form/SignInForm'
+import SignUpForm from '../form/SignUpForm'
 
 const AuthenticationView: React.FC<RouteComponentProps> = props => {
   const doNothing = () => undefined
