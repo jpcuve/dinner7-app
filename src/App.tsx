@@ -4,9 +4,9 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import AuthenticationView from './view/AuthenticationView'
 import HomeView from './view/HomeView'
 import CssBaseline from '@material-ui/core/CssBaseline'
-import { ThemeProvider, createMuiTheme } from '@material-ui/core'
 import TestView from './view/TestView'
 import { theme } from './theme'
+import { ThemeProvider } from '@material-ui/core'
 
 function App() {
   return (
