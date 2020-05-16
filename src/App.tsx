@@ -4,48 +4,11 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import AuthenticationView from './view/AuthenticationView'
 import HomeView from './view/HomeView'
 import CssBaseline from '@material-ui/core/CssBaseline'
-import { ThemeProvider, createMuiTheme } from '@material-ui/core'
 import TestView from './view/TestView'
+import { theme } from './theme'
+import { ThemeProvider } from '@material-ui/core'
 
 function App() {
-  const theme = createMuiTheme({
-    palette:{
-      primary: {        
-        main: "#DD9570",
-      },
-      secondary: {
-        main: "#DFCDC3",
-      },
-      error: {
-        main: '#FF0000'
-      },
-      warning: {
-        main: '#FFFF00'
-      },
-      info: {
-        main: '#0000FF'
-      },
-      success: {
-        main: '#00FF00'
-      },
-      background: {
-        default: '#DDDDDD',
-        paper: '#FF0000',
-      },
-    },
-    typography: {
-      fontFamily: 'Serif'
-    },
-    overrides: {
-      MuiButton: {
-        text: {
-          color: 'blue'
-        }
-
-      }
-
-    }
-  })
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline/>
